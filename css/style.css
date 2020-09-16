@@ -1,0 +1,577 @@
+@import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
+
+
+
+html{
+    font-size: 62.5%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: serif;
+}
+.section-ttl{
+    font-size: 5rem;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333;
+}
+
+
+.header{
+    top: 0;
+    z-index: 9999;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px #3d3d3b;
+    width: 100%;
+    position: fixed;
+    padding: 40px 60px;
+    background: rgba(255,255,255,0.9);
+}
+.header-inner.transform{
+    background-color: #fff;
+    padding: 10px 60px;
+}
+
+.header-main{
+    display: flex;
+}
+.header-logo-wrapper{
+    width: 55px;
+    height: 55px;
+    padding: 2.5px 0;
+}
+.header-logo-wrapper img{
+    width: 55px;
+    height: 55px;
+}
+.header-main-wrapper{
+    display: flex;
+    text-decoration: none;
+}
+.header-ttl-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.header-ttl{
+    font-size: 6rem;
+    margin-left: 10px;
+    color: #3d3d3b;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.header-ttl.tf{
+    margin-bottom: 0;
+}
+.header-ttl::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgb(86, 175, 197);;
+    transform: scale(0, 1);
+    transform-origin: right top;
+    transition: transform .3s;
+}
+.header-ttl:hover::after {
+    transform: scale(1, 1);
+}
+.header-ttl-tx{
+    color: #979797;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+.header-ttl-tx.nt{
+    display: none;
+}
+
+  
+
+.nav-list{
+    display: flex;
+}
+.icon-wrapper{
+    display: none;
+}
+.nav-item{
+    text-align: center;
+    margin-right: 5vw;
+    margin-top: 20px;    
+}
+.nav-item.cha{
+    margin-top: 0;
+}
+.nav-item:last-child{
+    margin-right: 0;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #3d3d3b;
+}
+.nav-item-text{
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+.nav-item-text.tf{
+    margin-bottom: 0;
+}
+.nav-item-tx{
+    font-size: 1.3rem;
+    color: #979797;
+}
+.nav-item-tx.nt{
+    display: none;
+}
+.nav-item-text::after{
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: rgb(86, 175, 197);;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+}
+.nav-item-text:hover::after{
+    transform: scale(1, 1);
+}
+  
+
+
+
+/* --------------------------------- */
+/* First View 
+/* --------------------------------- */
+
+
+.fv{
+    background-image: url(../img/fv_bgi.png);
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fv-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 200px;
+}
+.fv-ttl{
+    font-size: 4rem;
+    padding-bottom: 50px;
+}
+
+
+/* -------------------------- */
+/* ボタン 
+/* -------------------------- */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-contact {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  border-radius: 0.75rem;
+}
+
+a.btn-contact:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: translate3d(0, 0.75rem, -1rem);
+  transform: translate3d(0, 0.75rem, -1rem);
+
+  border: 2px solid #000;
+  border-radius: inherit;
+  background: #d4d4d4;
+  -webkit-box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+a.btn-contact:after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - 1rem);
+  left: 1.5rem;
+  margin: 0;
+  padding: 0;
+  content: "\f0e0";
+}
+
+.btn-contact-front {
+  position: relative;
+  display: block;
+  padding: 1.5rem 5rem 1.5rem 5rem;
+
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 2px solid #000;
+  border-radius: inherit;
+  background: #fff;
+}
+
+.fa-position-left {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: 1rem;
+}
+
+.fa-position-right {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  right: 1rem;
+}
+
+a.btn-contact:hover {
+  -webkit-transform: translate(0, 0.25rem);
+  transform: translate(0, 0.25rem);
+  background: #fff;
+}
+
+a.btn-contact:hover:before {
+  -webkit-transform: translate3d(0, 0.5rem, -1rem);
+  transform: translate3d(0, 0.5rem, -1rem);
+  -webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+a.btn-contact:hover:after {
+  content: "\f2b6";
+}
+
+a.btn-contact:active {
+  -webkit-transform: translate(0rem, 0.75rem);
+  transform: translate(0rem, 0.75rem);
+}
+
+a.btn-contact:active:before {
+  -webkit-transform: translate3d(0, 0, -1rem);
+  transform: translate3d(0, 0, -1rem);
+  -webkit-box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+a.btn-contact:active:after {
+  content: "\f2b6";
+}
+
+
+
+/* -------------------------------- */
+/* About
+/* -------------------------------- */
+
+
+.about{
+    width: 100%;
+    box-shadow: 0 0 3px #333;
+}
+.about-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.about-contents-wrapper{
+    display: flex;
+    margin-bottom: 40px;
+}
+.about-contents{
+    width: 65%;
+    margin-right: 30px;
+    padding-right: 15px;
+    border-right: 2px solid #3d3d3b;
+}
+.about-contents-ttl{
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+.about-contents-tx{
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+
+
+
+/* -------------------------------- */
+/* Service
+/* -------------------------------- */
+
+
+.service{
+    width: 100%;
+    padding-bottom: 100px;
+    box-shadow: 0 0 3px #333;
+}
+.service-inner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.service-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ct{
+    box-shadow: 0 0 3px #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    height: 650px;
+}
+.content1{
+    margin-right: 30px;
+}
+.content2{
+    margin-left: 30px;
+}
+.ctt{
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+.content1-ttl{
+    margin-bottom: 50px;
+}
+.content2-ttl{
+    margin-bottom: 40px;
+}
+.hp-img-wrapper{
+    margin: 20px 0;
+    margin-top: 0;
+}
+.tx-wrapper{
+    padding: 30px;
+}
+.tx{
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.8;
+    letter-spacing: 3px;
+}
+.hp-tx-wrapper{
+    padding-top: 10px;
+}
+.fig-wrapper{
+    display: flex;
+    font-size: 1.5rem;
+    padding: 30px;
+}
+.fig-wrapper p{
+    letter-spacing: 3px;
+    line-height: 1.8;
+}
+.left{
+    width: 10vw;
+}
+.left p{
+    margin-bottom: 20px;
+}
+.right p{
+    margin-bottom: 20px;
+}
+.span{
+    padding-left: 30px;
+}
+.contact-link{
+    color: rgb(86, 175, 197);
+}
+
+
+
+
+
+/* -------------------------------- */
+/* Works
+/* -------------------------------- */
+
+.works{
+    width: 100%;
+    box-shadow: 0 0 3px #333;
+    padding-bottom: 100px;
+}
+.works-inner{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.works-contents{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.works-contents-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.works-contents-item{
+    padding: 20px;
+    object-fit: fill;
+}
+.buttons button{
+    width: 100px;
+    height: 30px;
+}
+.buttons button:focus{
+    outline: 0;
+}
+.selected{
+    background-color: #3d3d3b;
+    color: #fff;
+}
+
+
+/* -------------------------------- */
+/* Contact
+/* -------------------------------- */
+
+
+.contact{
+    width: 100%;
+    /* background-color: #929292; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-inner{
+    display: flex;
+    padding-bottom: 40px;
+}
+.contact-wrapper{
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 3px #333;
+}
+.contact-wrapper p{
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+.contact-ttl{
+    margin-bottom: 100px;
+    padding: 20px 0;
+    padding-bottom: 5px;
+}
+.twitter-wrapper{
+    margin-left: 30px;
+    padding-left: 40px;
+    border-left: 1px solid #333;
+}
+
+a.btn-sns {
+    font-size: 2.4rem;
+    line-height: 50px;
+  
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  
+    letter-spacing: 0;
+  
+    color: #fff;
+    border-radius: 50%;
+}
+  
+a.btn-sns:hover {
+    color: #fff;
+}
+  
+a.btn-sns--twitter {
+    background: #9e9e9e;
+}
+
+
+
+
+
+/* -------------------------------- */
+/* Footer 
+/* -------------------------------- */
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(61, 61, 61);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 2rem;
+    color: #bbb;
+}
+
+@media screen and (max-width: 426px){
+    
+}
