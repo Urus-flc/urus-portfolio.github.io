@@ -1,24 +1,3 @@
-//スティッキーヘッダー
-// $(function(){
-//     var $win = $(window),
-//         $fv = $('.fv'),
-//         $header = $('header'),
-//         fvHeight = $fv.outerHeight();
-//         fixedClass = 'fixed';
-    
-//     $win.on('load scroll',function(){
-//         var value = $(this).scrollTop();
-//         if($win.width() > 768){
-//             if(value > fvHeight){
-//                 $header.addClass(fixedClass);
-//             }else{
-//                 $header.removeClass(fixedClass);
-//             }
-//         }
-//     });
-// });
-
-
 var _window = $(window),
     _header = $('.header-inner'),
     _headerMain = $('.header-ttl-tx'),
@@ -37,6 +16,11 @@ _window.on('scroll',function(){
         _headerNavLi.addClass('tf');
         _headerTtl.addClass('tf');
         _navItem.addClass('cha');
+        $('.iwh').children('img').attr('src', 'img/icon_home_black.png');
+        $('.iwa').children('img').attr('src', 'img/icon_about_black.png');
+        $('.iws').children('img').attr('src', 'img/icon_service_black.png');
+        $('.iww').children('img').attr('src', 'img/icon_works_black.png');
+        $('.iwc').children('img').attr('src', 'img/icon_contact_black.png');
     }
     else{
         _header.removeClass('transform');
@@ -45,22 +29,16 @@ _window.on('scroll',function(){
         _headerNavLi.removeClass('tf');
         _headerTtl.removeClass('tf');
         _navItem.removeClass('cha');
+        $('.iwh').children('img').attr('src', 'img/icon_home.png');
+        $('.iwa').children('img').attr('src', 'img/icon_about.png');
+        $('.iws').children('img').attr('src', 'img/icon_service.png');
+        $('.iww').children('img').attr('src', 'img/icon_works.png');
+        $('.iwc').children('img').attr('src', 'img/icon_contact.png');
     }
 });
  
 _window.trigger('scroll');
 
-
-
-
-// $(function(){
-//     $("a[href^=#]").click(function(){
-//         var target = $($(this).attr("href")).offset().top;
-//         target -= 40;
-//         $("html, body").animate({scrollTop: target}, 500);
-//         return false;
-//     });
-// });
 
 // イージング関数
 var Ease = {
