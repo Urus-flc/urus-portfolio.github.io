@@ -16,6 +16,9 @@ html{
     border-bottom: 1px solid #333;
 }
 
+/* --------------------------------- */
+/* Header 
+/* --------------------------------- */
 
 .header{
     top: 0;
@@ -35,6 +38,7 @@ html{
     background-color: #fff;
     padding: 10px 60px;
 }
+
 
 .header-main{
     display: flex;
@@ -97,6 +101,18 @@ html{
 
 .nav-list{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.nav-list-wrapper{
+    display: flex;
+}
+.nav-list-inner{
+    margin-right: 40px;
+}
+.nav-list-inner:last-child{
+    margin-right: 0;
 }
 .icon-wrapper{
     display: none;
@@ -124,6 +140,7 @@ html{
 }
 .nav-item-text.tf{
     margin-bottom: 0;
+    color: rgb(90, 90, 90);
 }
 .nav-item-tx{
     font-size: 1.3rem;
@@ -147,7 +164,9 @@ html{
 .nav-item-text:hover::after{
     transform: scale(1, 1);
 }
-  
+
+
+
 
 
 
@@ -160,7 +179,7 @@ html{
     background-image: url(../img/fv_bgi.png);
     background-size: contain;
     width: 100%;
-    height: 100vh;
+    padding-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,12 +190,18 @@ html{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 200px;
+    padding-bottom: 300px;
 }
 .fv-ttl{
-    font-size: 4rem;
-    padding-bottom: 50px;
+    font-size: 3.5rem;
+    padding-bottom: 40px;
+    padding-top: 10px;
 }
+.fv-ttl-br{
+    display: none;
+}
+
+
 
 
 /* -------------------------- */
@@ -312,6 +337,10 @@ a.btn-contact:active:after {
   content: "\f2b6";
 }
 
+.btn-contact{
+    margin-bottom: 100px;
+}
+
 
 
 /* -------------------------------- */
@@ -333,13 +362,11 @@ a.btn-contact:active:after {
 
 .about-contents-wrapper{
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .about-contents{
     width: 65%;
-    margin-right: 30px;
-    padding-right: 15px;
-    border-right: 2px solid #3d3d3b;
+    padding-right: 30px;
 }
 .about-contents-ttl{
     font-size: 3.5rem;
@@ -348,7 +375,19 @@ a.btn-contact:active:after {
 .about-contents-tx{
     font-size: 2rem;
     margin-bottom: 60px;
+    line-height: 1.5;
 }
+.about-contents-img-wrapper{
+    padding-left: 55px;
+    border-left: 2px solid #3d3d3b;
+}
+.accent{
+    font-weight: bold;
+}
+
+
+
+
 
 
 
@@ -362,14 +401,14 @@ a.btn-contact:active:after {
     padding-bottom: 100px;
     box-shadow: 0 0 3px #333;
 }
-.service-inner{
+.service-inner{ 
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.service-contents{
+.service-contents{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -380,9 +419,7 @@ a.btn-contact:active:after {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 40%;
-    height: 650px;
-}
+    width: 40%;}
 .content1{
     margin-right: 30px;
 }
@@ -391,20 +428,7 @@ a.btn-contact:active:after {
 }
 .ctt{
     font-size: 3.5rem;
-    margin-bottom: 30px;
-}
-.content1-ttl{
-    margin-bottom: 50px;
-}
-.content2-ttl{
-    margin-bottom: 40px;
-}
-.hp-img-wrapper{
-    margin: 20px 0;
-    margin-top: 0;
-}
-.tx-wrapper{
-    padding: 30px;
+    margin: 30px 0;
 }
 .tx{
     font-size: 1.5rem;
@@ -412,33 +436,34 @@ a.btn-contact:active:after {
     line-height: 1.8;
     letter-spacing: 3px;
 }
-.hp-tx-wrapper{
-    padding-top: 10px;
-}
-.fig-wrapper{
-    display: flex;
-    font-size: 1.5rem;
+.tx-wrapper{
     padding: 30px;
 }
-.fig-wrapper p{
-    letter-spacing: 3px;
-    line-height: 1.8;
+.lp-tx-wrapper{
+    padding-bottom: 85px;
 }
-.left{
-    width: 10vw;
+table{
+    font-size: 2rem;
+    text-align: center;
 }
-.left p{
-    margin-bottom: 20px;
+table th, table td{
+    border: 2px solid rgb(179, 179, 179);
 }
-.right p{
-    margin-bottom: 20px;
+.price, .submit, .others{
+    padding: 10px 30px;
+    writing-mode: horizontal-tb;
 }
-.span{
-    padding-left: 30px;
+.td{
+    padding: 10px;
+    line-height: 1.5;
 }
 .contact-link{
     color: rgb(86, 175, 197);
-}
+} 
+
+
+
+
 
 
 
@@ -469,10 +494,16 @@ a.btn-contact:active:after {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    align-content: center;
 }
 .works-contents-item{
     padding: 20px;
     object-fit: fill;
+}
+.buttons button{
+    margin: 0 15px 30px;
+    border-radius: 10px;
+    font-size: 1.5rem;
 }
 .buttons button{
     width: 100px;
@@ -485,6 +516,9 @@ a.btn-contact:active:after {
     background-color: #3d3d3b;
     color: #fff;
 }
+
+
+
 
 
 /* -------------------------------- */
@@ -503,6 +537,7 @@ a.btn-contact:active:after {
 .contact-inner{
     display: flex;
     padding-bottom: 40px;
+    padding-left: 50px;
 }
 .contact-wrapper{
     padding-right: 50px;
@@ -516,17 +551,19 @@ a.btn-contact:active:after {
 }
 .contact-wrapper p{
     font-size: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
-.contact-ttl{
-    margin-bottom: 100px;
-    padding: 20px 0;
-    padding-bottom: 5px;
+.contact-tx{
+    line-height: 2;
+}
+.contact-wrapper-itc{
+    font-weight: bold;
 }
 .twitter-wrapper{
     margin-left: 30px;
     padding-left: 40px;
     border-left: 1px solid #333;
+    padding-right: 40px;
 }
 
 a.btn-sns {
@@ -572,6 +609,306 @@ footer p{
     color: #bbb;
 }
 
-@media screen and (max-width: 426px){
-    
+@media screen and (min-width: 1025px){
+    /* -------------------------- */
+    /* Service 
+    /* -------------------------- */
+    .hp-tx-wrapper{
+        padding-bottom: 60px;
+    }
+}
+@media screen and (max-width: 1199px){
+    .works-contents{
+        max-width: 800px;
+    }
+
+    .contact-wrapper{
+        padding: 0 10px;
+        margin: 0;
+    }
+    .twitter-wrapper{
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+
+    /* -------------------------- */
+    /* Header
+    /* -------------------------- */
+
+    .icon-wrapper{
+        display: block;
+    }
+    .header-inner{
+        bottom: 0;
+        background-color: rgb(88, 88, 88);
+        padding: 10px 40px;
+    }
+    .header-main{
+        display: none;
+    }
+    .nav-list-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 60px;
+    }
+    .nav-item-text{
+        color: #bbb;
+    }
+
+
+
+
+    /* -------------------------- */
+    /* First View 
+    /* -------------------------- */
+
+    .fv{
+        padding-top: 0;
+    }
+    .fv-wrapper{
+        padding-bottom: 200px;
+    }
+    .fv-ttl{
+        padding-top: 60px;
+        font-size: 2.8rem;
+    }
+
+    /* -------------------------- */
+    /* About
+    /* -------------------------- */
+
+    .about-contents-img-wrapper{
+        width: 200px;
+        height: 200px;
+        padding-left: 30px;
+    }
+    .about-contents-img{
+        width: 200px;
+        height: 200px;
+    }
+    .about-contents-2{
+        width: 500px;
+    }
+
+    /* -------------------------- */
+    /* Service 
+    /* -------------------------- */
+
+    .small{
+        font-size: 2rem;
+    }
+    .lp-tx-wrapper{
+        padding-bottom: 135px;
+    }
+
+    /* -------------------------- */
+    /* Works
+    /* -------------------------- */
+
+    .works-contents-item{
+        padding: 12px;
+    }
+
+    /* -------------------------- */
+    /* footer
+    /* -------------------------- */
+
+    .footer{
+        margin-bottom: 95px;
+    }
+
+}
+@media screen and (max-width: 425px){
+    /* -------------------------- */
+    /* Header
+    /* -------------------------- */
+
+    .icon-wrapper{
+        width: 50px;
+        height: 50px;
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+    }
+    .header-inner{
+        padding: 5px;
+    }
+    .nav-list{
+        margin: 0 25px;
+    }
+    .nav-item{
+        margin-top: 10px;
+    }
+    .nav-list-inner{
+        margin-right: 15px;
+    }
+    .nav-item-text{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .nav-item-tx{
+        font-size: 3px;
+    }
+    .header-inner.transform{
+        padding: 5px 10px;
+    }
+
+
+
+    /* -------------------------- */
+    /* First View 
+    /* -------------------------- */
+
+    .fv{
+        padding-top: 0;
+        height: 85vh;
+        background-image: url(../img/fv-bgi-sp.jpg);
+    }
+    .fv-wrapper{
+        padding-bottom: 200px;
+    }
+    .fv-ttl{
+        padding-top: 60px;
+        font-size: 2.5rem;
+        line-height: 1.8;
+        text-align: center;
+    }
+    .fv-ttl-br{
+        display: block;
+    }
+
+    /* -------------------------- */
+    /* About
+    /* -------------------------- */
+
+    .about-inner{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .about-contents-wrapper{
+        flex-direction: column;
+    }
+    .about-contents{
+        width: 100%;
+        padding: 0;
+    }
+    .about-contents-img-wrapper{
+        width: 100%;
+        height: 100px;
+        border: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-contents-img{
+        width: 100px;
+        height: 100px;
+    }
+    .about-contents-2{
+        width: 100%;
+    }
+
+    /* -------------------------- */
+    /* Service 
+    /* -------------------------- */
+
+    .service-contents{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+    }
+    .ct{
+        margin: 0;
+        width: 100%;
+    }
+    .content1{
+        margin-bottom: 60px;
+    }
+    .small{
+        font-size: 2rem;
+    }
+    .lp-tx-wrapper{
+        padding-bottom: 30px;
+    }
+
+    /* -------------------------- */
+    /* Works
+    /* -------------------------- */
+
+    .buttons button{
+        margin: 0 30px 30px;
+    }
+    .works-contents-list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .works-contents-item{
+        padding: 12px 0;
+    }
+
+    /* -------------------------- */
+    /* contact
+    /* -------------------------- */
+
+    .twitter-wrapper{
+        margin: 30px;
+        border: none;
+    }
+    .contact-wrapper{
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .contact-inner{
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    /* -------------------------- */
+    /* footer
+    /* -------------------------- */
+
+    .footer{
+        margin-bottom: 80px;
+    }
+}
+
+
+@media screen and (max-width: 375px){
+    .fv{
+        height: 89vh;
+    }
+    .icon-wrapper{
+        width: 30px;
+        height: 30px;
+    }
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-list{
+        margin: 0;
+        padding: 0 10px;
+    }
+    .nav-list-inner{
+        margin-right: 21px;
+    }
+    .nav-item-text{
+        font-size: 15px;
+    }
+    .header-inner.transform{
+        padding: 5px 10px;
+        padding-left: 20px;
+    }
+
+    .footer{
+        margin-bottom: 55px;
+    }
 }
